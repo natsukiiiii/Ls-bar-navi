@@ -2564,7 +2564,7 @@
    */
   function applyStyle(data) {
     // any property present in `data.styles` will be applied to the popper,
-    // in this way we can make the 3rd party modifiers add custom styles to it
+    // in this way we can make the 3rd partymap modifiers add custom styles to it
     // Be aware, modifiers could override the properties defined in the previous
     // lines of this modifier!
     setStyles(data.instance.popper, data.styles);
