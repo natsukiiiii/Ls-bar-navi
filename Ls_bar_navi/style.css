@@ -40,6 +40,12 @@ body{
 .navbar-dark .navbar-nav .nav-link:hover{
   color: #1ebba3;
 }
+li.sns-btn__item a{
+  color: white;
+}
+li.sns-btn__item{
+  padding-top: 12px;
+}
 /* LP */
 .home-inner{
   /* background-image: url(img/computers.png); */
@@ -77,8 +83,27 @@ body{
   border-radius: 0;
   padding: .6rem 1.3rem;
   font-size: 1.1rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem yellow;
+}
+.btn:hover{
+  background-color: rgba(255, 255, 255, .2);
+  color: white;
 }
 
+.sns-btn {
+  /* width: 30%; */
+    margin: 0;
+}
+
+.sns-btn li:hover{
+  background-color: rgba(255, 255, 255, .2);
+
+}
+
+.sns-btn ul{
+  list-style: none;
+  display: flex;
+}
 /* concept section */
 .narrow{
   width: 100%;
@@ -94,11 +119,17 @@ body{
   border-top: solid 1px white;
 }
 
-div {
+.explanation{
+  line-height: 60px;
+}
+
+.rainbow {
     background: linear-gradient(-45deg, rgba(246, 255, 0, .8), rgba(255, 0, 161, .8)) fixed;
     background-size: cover;
+    color:white;
 }
 /* , url(http://www.webcreatorbox.com/sample/images/bg-cherrybrossam.jpg) fixed */
+
 
 .btn-secondary:hover{
   border-color:#189582;
@@ -139,12 +170,14 @@ font-size: 1.9rem;
 font-weight: 700;
 text-transform: uppercase;
 margin-bottom: 1.9rem;
+margin-top: 1.9rem;
+text-shadow: 0.1rem 0.1rem 0.5rem yellow;
 }
 
 .heading-underline{
 width: 3rem;
 height: .2rem;
-background-color: #1ebba3;
+background-color: yellow;
 margin: 0 auto 2rem;
 }
 
@@ -183,9 +216,12 @@ margin-bottom: 2rem;
 
 
 /* clients */
-.clients img{
+.ContactUs img{
   width: 100%;
   border-radius:50%; 
+}
+.ContactUs{
+  text-align: center;
 }
 
 blockquote .svg-inline--fa{
@@ -193,16 +229,12 @@ blockquote .svg-inline--fa{
   margin: 1rem;
 }
 
-.clients-hr{
-border-top: .05rem solid #1ebba3;
+.ContactUs-hr{
+border-top: .05rem solid white;
 }
 
 /* contact section */
 footer{
-  background-color: #40474e;
-  color: white;
-  padding:2rem 0 2rem;
-  margin-top: 1rem; 
 }
 
 footer img{
@@ -225,7 +257,7 @@ footer svg.svg-inline--fa:hover{
 
 hr.socket{
   width: 100%;
-  border-top: .2rem solid #666b71;
+  border-top: .1rem solid white;
   margin-top: 3rem;
 }
 
@@ -279,18 +311,23 @@ figure {
   .narrow h1{
     font-size: 1.5rem;
   }
-  .clients img{
+  .ContactUs img{
     max-width:50% ;
     display: block;
     margin: 0 auto;
   }
+  .partymap-img{
+    width: 350px;
+  }
+  .navbar-nav li.sns-btn__item{
+    display: none;
+  }
+
 }
 
 @media (max-width: 576px) {
 .landing{
   width: 200%;
-}
-
 }
 body{
   width: 100%;
@@ -298,6 +335,17 @@ body{
 .navbar{
   width: 100%;
 }
+.partymap-img{
+  width: 345px;
+}
+.caption h1{
+  
+}
+iframe{
+  width: 345px;
+}
+.pc { display:none; }
+.sp { display:block; }
 }
 
 /*============ BOOTSTRAP BREAK POINTS:
